@@ -6,7 +6,7 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade virtualenv
 
 RUN mkdir deployment
-RUN git clone https://github.com/ajaypatel01/python_flask_restful_server.git /deployment/
+RUN git clone https://github.com/ajaypatel01/python_flask_restful_api.git /deployment/
 RUN virtualenv /deployment/env/
 RUN /deployment/env/bin/pip install flask
 WORKDIR /deployment
